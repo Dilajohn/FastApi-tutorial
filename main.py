@@ -24,7 +24,7 @@ def get_posts():
     return {"data": "This is your post"}
 
 
-@app.post("/createposts")
+@app.post("/posts")
 def create_posts(post: Post):
     print(post)
     print(post.model_dump())
